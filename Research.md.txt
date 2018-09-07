@@ -1,1 +1,0 @@
-https://selenium-python.readthedocs.io/navigating.html#interacting-with-the-page
