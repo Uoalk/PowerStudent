@@ -1,1 +1,3 @@
 *.config
+gradeData.json
+*.log
