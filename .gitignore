@@ -1,3 +1,6 @@
 *.config
+<<<<<<< HEAD
 gradeData.json
+=======
+>>>>>>> 89e0de93434b57928a4866e0209dbdb2a9a597ba
 *.log
