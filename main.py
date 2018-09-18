@@ -2,14 +2,9 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
-<<<<<<< HEAD
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import json
-=======
-
-
->>>>>>> 89e0de93434b57928a4866e0209dbdb2a9a597ba
 import os
 from pprint import pprint
 import datetime
@@ -22,7 +17,6 @@ config.read('account.config')
 
 
 import smtplib
-<<<<<<< HEAD
 def send_email(user, pwd, recipient, subject, body):#https://stackoverflow.com/questions/10147455/how-to-send-an-email-with-gmail-as-provider-using-python
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
@@ -39,8 +33,6 @@ def send_email(user, pwd, recipient, subject, body):#https://stackoverflow.com/q
     mail.login(user,pwd)
     mail.sendmail(user, recipient, msg.as_string())
     mail.quit()
-=======
->>>>>>> 89e0de93434b57928a4866e0209dbdb2a9a597ba
 
 
 def signOn(driver,usr,pw):
@@ -49,7 +41,6 @@ def signOn(driver,usr,pw):
     driver.find_element_by_id("fieldPassword").send_keys(pw);
     driver.find_element_by_id("btn-enter").click();
 
-<<<<<<< HEAD
 def getGrades():
     allTd=driver.find_elements_by_css_selector("table>tbody>tr>td")
     i=6;
@@ -119,13 +110,10 @@ while True:
                         messageData+="<b>New grade in "+classNames[n]+":</b> "+grades[i]["name"]+":"+grades[i]["grade"]+"<br>"
                 gradeData[classNames[n]]=grades;
                 driver.back();
-=======
->>>>>>> 89e0de93434b57928a4866e0209dbdb2a9a597ba
 
 
 
 
-<<<<<<< HEAD
 
 
 
@@ -143,26 +131,3 @@ while True:
             driver.close()
     except Exception as e:
         print(e)
-=======
-if __name__ == "__main__":
-    gradesChanged=False;
-    messageData="";
-    options = Options()
-    ptions.add_argument("--headless")
-    driver = webdriver.Firefox(firefox_options=options, executable_path="geckodriver.exe")
-
-    signOn(driver, config['DEFAULT']["powerschoolUsername"],config['DEFAULT']["powerschoolPassword"])
-
-
-
-    allTd=driver.find_elements_by_css_selector("#content-main>div>table>tbody>tr>td");
-    classNames=[];
-    i=16;
-    while(i<len(allTd)):
-        classNames.append(allTd[i].text.split("\n")[0])
-        i+=15
-
-
-    print(classNames)
-    driver.close()
->>>>>>> 89e0de93434b57928a4866e0209dbdb2a9a597ba
