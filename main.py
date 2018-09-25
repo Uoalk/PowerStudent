@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
-
+import json
 import os
 from pprint import pprint
 import datetime
@@ -60,6 +60,8 @@ if __name__ == "__main__":
     #removes the last 4 links, becuse those are advisory and reflections, not classes
     newLinks = links[0:(len(links)-4)]
 
+    classes = {}
+
     #getting assignments and grades
     for j in range(len(newLinks)):
         #clicks on the link to each class
@@ -67,17 +69,31 @@ if __name__ == "__main__":
 
         #gets all the data
         allTd2 = driver.find_elements_by_css_selector("#content-main>table>tbody>tr>td")
-        grades=[];
+
+        grades = {}
 
         #starts at 6 because that's where the first assignment is
         k=6
+        #corresponds to the grade number of the class
+        num = 0
         while(k<(len(allTd2)-6)):
-            #adds the grades in format of 'Assignment -- Grade'
-            grades.append((allTd2[k].text.split("\n")[0]) + " -- " + (allTd2[k+6].text.split("\n")[0]))
+            #adds the grades in format of 'assignment': assigment, 'grade': grade
+            grades[num] = {
+            'assignment': (allTd2[k].text.split("\n")[0]),
+            'grade' : (allTd2[k+6].text.split("\n")[0])
+            }
+            #gradesDic[(allTd2[k].text.split("\n")[0])] = (allTd2[k+6].text.split("\n")[0])
             k+=11
-        print(grades)
-        #goes back
+            num+=1
+
+        #the name of the class is the 0th element, so it adds the dictionary of grades to the key of the class name
+        classes[(allTd2[0].text.split("\n")[0])] = grades
+
+        #goes back to main browser
         driver.execute_script("window.history.go(-1)")
 
+
+        with open('grades.json', 'w') as file:
+            json.dump(classes, file, indent=2)
 
     driver.close()
