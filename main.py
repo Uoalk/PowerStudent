@@ -8,15 +8,37 @@ import os
 from pprint import pprint
 import datetime
 import configparser
+from collections import OrderedDict
 
 config = configparser.ConfigParser()
 config.read('account.config')
 
 #
 
-
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 import smtplib
+def send_email(user, pwd, recipient, subject, body):#https://stackoverflow.com/questions/10147455/how-to-send-an-email-with-gmail-as-provider-using-python
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From'] = user
+    msg['To'] = recipient
 
+
+    msg.attach(MIMEText(body, 'html'))
+
+    # Send the message via local SMTP server.
+    mail = smtplib.SMTP('smtp.gmail.com', 587)
+    mail.ehlo()
+    mail.starttls()
+    mail.login(user,pwd)
+    mail.sendmail(user, recipient, msg.as_string())
+    mail.quit()
+
+
+
+def removeDupes(l):
+    return list(OrderedDict.fromkeys(l))
 
 def signOn(driver,usr,pw):
     driver.get("https://powerschool.kentdenver.org")
@@ -25,14 +47,43 @@ def signOn(driver,usr,pw):
     driver.find_element_by_id("btn-enter").click();
 
 
+def getGrades():
+    #starts at 6 because that's where the first assignment is
+    k=6
+    #corresponds to the grade number of the class
+    num = 0
+    grades=[]
+    while(k<(len(allTd2)-6)):
 
+        #adds the grades in format of 'assignment': assigment, 'grade': grade
+        assignmentName=allTd2[k].text.split("\n")[0]
+        score=allTd2[k+6].text.split("\n")[0]
 
+        grades.append({
+        'name': assignmentName,
+        'score' : score
+        })
+        k+=11
+        num+=1
+    return grades
 
+def getStoredGrades():
+    fn="gradeData.json"
+    try:
+        file = open(fn, 'r')
+    except IOError:
+        file = open(fn, 'w+')
+        file.write("{}")
+    file.close()
+    file=open(fn,"r")
+    gradeData=json.load(file)
+    file.close();
+    return gradeData
 if __name__ == "__main__":
     gradesChanged=False;
     messageData="";
     options = Options()
-    options.add_argument("--headless")
+    #options.add_argument("--headless")
     driver = webdriver.Firefox(firefox_options=options, executable_path="geckodriver.exe")
 
     signOn(driver, config['DEFAULT']["powerschoolUsername"],config['DEFAULT']["powerschoolPassword"])
@@ -55,45 +106,58 @@ if __name__ == "__main__":
         except IndexError:
             pass
         i+=15
+
+    classNames=removeDupes(classNames)#sometimes duplicate classes occur
     print(classNames)
 
-    #removes the last 4 links, becuse those are advisory and reflections, not classes
-    newLinks = links[0:(len(links)-4)]
+    gradeData=getStoredGrades()
+
+
+    for className in classNames:
+        if(className not in gradeData):
+            gradeData.update({className:[]})
+            gradesChanged=True;
+            messageData+="New class: "+className+"<br>"
 
     classes = {}
 
+    grade={}
     #getting assignments and grades
-    for j in range(len(newLinks)):
+    for n in range(len(links)):
         #clicks on the link to each class
-        driver.get(newLinks[j])
+        driver.get(links[n])
 
         #gets all the data
         allTd2 = driver.find_elements_by_css_selector("#content-main>table>tbody>tr>td")
 
         grades = {}
 
-        #starts at 6 because that's where the first assignment is
-        k=6
-        #corresponds to the grade number of the class
-        num = 0
-        while(k<(len(allTd2)-6)):
-            #adds the grades in format of 'assignment': assigment, 'grade': grade
-            grades[num] = {
-            'assignment': (allTd2[k].text.split("\n")[0]),
-            'grade' : (allTd2[k+6].text.split("\n")[0])
-            }
-            #gradesDic[(allTd2[k].text.split("\n")[0])] = (allTd2[k+6].text.split("\n")[0])
-            k+=11
-            num+=1
 
+        className=(allTd2[0].text.split("\n")[0])
         #the name of the class is the 0th element, so it adds the dictionary of grades to the key of the class name
-        classes[(allTd2[0].text.split("\n")[0])] = grades
+
+        grades=getGrades();
+        if(len(gradeData[classNames[n]])!=len(grades)):
+            gradesChanged=True;
+            for i in range(len(gradeData[classNames[n]]), len(grades)):
+                messageData+="<b>New grade in "+classNames[n]+":</b> "+grades[i]["name"]+":"+grades[i]["score"]+"<br>"
+        for i in range(0,min(len(grades),len(gradeData[classNames[n]]))):
+
+            if(gradeData[classNames[n]][i]["name"]!=grades[i]["name"]):
+                messageData+="<b>New grade in "+classNames[n]+":</b> "+grades[i]["name"]+":"+grades[i]["score"]+"<br>"
+        gradeData[classNames[n]]=grades;
 
         #goes back to main browser
         driver.execute_script("window.history.go(-1)")
 
+    print(gradeData)
+    with open('gradeData.json', 'w') as file:
+        json.dump(gradeData, file, indent=2)
 
-        with open('grades.json', 'w') as file:
-            json.dump(classes, file, indent=2)
+    if(messageData!=""):
+        send_email(config['DEFAULT']["emailAddress"],config['DEFAULT']["emailPassword"],config['DEFAULT']["sendEmailTo"],"Powerschool update",messageData)
+        print(messageData)
+    else:
+        print(str(datetime.datetime.now())+": no change")
 
     driver.close()
