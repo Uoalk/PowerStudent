@@ -66,6 +66,23 @@ def getGrades():
         k+=11
         num+=1
     return grades
+def getClassNamesAndLinks():
+    classNames=[];
+    allTd=driver.find_elements_by_css_selector("#content-main>div>table>tbody>tr>td");
+    links=[]
+    i=16;
+    while (i<(len(allTd)-2)):
+        classNames.append(allTd[i].text.split("\n")[0])
+        #adds the link of the grade of each class
+        try:
+            links.append(allTd[i+1].find_elements_by_css_selector("a")[0].get_attribute("href"))
+        #it does a try except because second semester classes don't have links with them, throwing an IndexError
+        except IndexError:
+            pass
+        i+=15
+
+    classNames=removeDupes(classNames)#sometimes duplicate classes occur
+    return {"classNames":classNames, "links":links}
 
 def getStoredGrades():
     fn="gradeData.json"
@@ -85,32 +102,15 @@ if __name__ == "__main__":
     options = Options()
     #options.add_argument("--headless")
     driver = webdriver.Firefox(firefox_options=options, executable_path="geckodriver.exe")
-
     signOn(driver, config['DEFAULT']["powerschoolUsername"],config['DEFAULT']["powerschoolPassword"])
 
 
-
-    allTd=driver.find_elements_by_css_selector("#content-main>div>table>tbody>tr>td");
-    allLinks=driver.find_elements_by_css_selector("#content-main>div>table>tbody>tr>td>a");
-
-    classNames=[];
-
-    links=[]
-    i=16;
-    while (i<(len(allTd)-2)):
-        classNames.append(allTd[i].text.split("\n")[0])
-        #adds the link of the grade of each class
-        try:
-            links.append(allTd[i+1].find_elements_by_css_selector("a")[0].get_attribute("href"))
-        #it does a try except because second semester classes don't have links with them, throwing an IndexError
-        except IndexError:
-            pass
-        i+=15
-
-    classNames=removeDupes(classNames)#sometimes duplicate classes occur
-    print(classNames)
-
+    nal=getClassNamesAndLinks();
+    links=nal['links'];
+    classNames=nal['classNames'];
     gradeData=getStoredGrades()
+
+
 
 
     for className in classNames:
@@ -129,10 +129,7 @@ if __name__ == "__main__":
 
         #gets all the data
         allTd2 = driver.find_elements_by_css_selector("#content-main>table>tbody>tr>td")
-
         grades = {}
-
-
         className=(allTd2[0].text.split("\n")[0])
         #the name of the class is the 0th element, so it adds the dictionary of grades to the key of the class name
 
