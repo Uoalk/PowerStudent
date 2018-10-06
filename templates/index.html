@@ -3,4 +3,8 @@
 <title>PowerStudent</title>
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
 
-<h1>Welcome to PowerStudent</h1>
+<form action="/authenticate" method="post">
+  <input name="username"></input>
+  <input name="password"></input>
+  <input type="submit" value="Submit">
+</form>

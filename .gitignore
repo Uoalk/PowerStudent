@@ -1,3 +1,4 @@
 *.config
 gradeData.json
 *.log
+*.pyc
