@@ -41,7 +41,10 @@ def updateAndEmail():
     changes=getChanges(getStoredGrades(), gradeData)
     print(changes)
 
-    if changes!="":
-        emailer.send_email(config['DEFAULT']["emailAddress"],config['DEFAULT']["emailPassword"],config['DEFAULT']["sendEmailTo"],"Powerschool update",changes)
+    try:
+        if changes!="":
+            emailer.send_email(config['DEFAULT']["emailAddress"],config['DEFAULT']["emailPassword"],config['DEFAULT']["sendEmailTo"],"Powerschool update",changes)
+    except:
+        pass
     with open('gradeData.json', 'w') as file:
         json.dump(gradeData, file, indent=2)
