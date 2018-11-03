@@ -44,4 +44,3 @@ def updateAndEmail():
         emailer.send_email(config['DEFAULT']["emailAddress"],config['DEFAULT']["emailPassword"],config['DEFAULT']["sendEmailTo"],"Powerschool update",changes)
     with open('gradeData.json', 'w') as file:
         json.dump(gradeData, file, indent=2)
-updateAndEmail()

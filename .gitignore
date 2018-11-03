@@ -2,4 +2,4 @@
 gradeData.json
 *.log
 *.pyc
-names.json
+*.json

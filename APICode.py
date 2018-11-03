@@ -1,8 +1,10 @@
 import requests, hmac, base64, json, os
 from bs4 import BeautifulSoup
 from hashlib import md5
+import hmac
+import base64
 
-
+print(hmac.new("701B4AAA18A264364E1314884D941165549D3E0F2FFE79016B9C2D5C6CE607BA".encode("utf-8"),"k31415".encode("utf-8")).hexdigest())
 
 dir = os.path.dirname(__file__)
 
@@ -24,7 +26,11 @@ def getGrades(usr, rawPw, debugPrint):
     homeHT =  BeautifulSoup(home.text, "html5lib")
     key = homeHT.find('input', {'name':'contextData'})["value"]
     tok = homeHT.find('input', {'name':'pstoken'})["value"]
-    pw = md5(str(rawPw)).digest().encode('base64')[:-3]
+    #pw = md5(rawPw.encode("utf-8")).digest().encode('base64')[:-3]
+    #print(md5(rawPw.encode("utf-8")).digest().decode("base64"))
+    pw =  md5(rawPw.encode("utf-8")).hexdigest()[:-3]
+    print(pw)
+    
     pw = hmac.new(str(key), pw, md5).hexdigest()
     db = base64.b64encode(hmac.new(str(key), rawPw.lower(), md5).digest()).decode("base64").encode("hex")[:-3]
     ses = str(s.cookies.get_dict()['JSESSIONID'])

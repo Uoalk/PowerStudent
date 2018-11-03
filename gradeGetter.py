@@ -15,9 +15,9 @@ def removeDupes(l):
 
 def signOn(driver,usr,pw):
     driver.get("https://powerschool.kentdenver.org")
-    driver.find_element_by_id("fieldAccount").send_keys(usr);
-    driver.find_element_by_id("fieldPassword").send_keys(pw);
-    driver.find_element_by_id("btn-enter").click();
+    driver.find_element_by_id("fieldAccount").send_keys(usr)
+    driver.find_element_by_id("fieldPassword").send_keys(pw)
+    driver.find_element_by_id("btn-enter").click()
 
 
 def getGradesFromPage(driver):
@@ -98,3 +98,17 @@ def getGrades(usr, pw):
         gradeData[className]=getGradesFromPage(driver);
     driver.close()
     return gradeData
+
+
+
+def verifyUsernamePassword(usr,pw):
+    options = Options()
+    options.add_argument("--headless")
+    driver = webdriver.Firefox(firefox_options=options, executable_path="geckodriver.exe")
+    signOn(driver, usr, pw)
+    try: 
+        driver.find_element_by_css_selector(".feedback-alert")
+    except:
+        return True
+    return False
+

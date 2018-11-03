@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <script src="{{url_for('static', filename='jquery.js')}}"></script>
+   <body>
+
+     <h1>Sign up for automatic grade updates</h1>
+     <form action="/submitDetails" method="post">
+         Powerschool username:<input name="username"><br>
+         Powerschool password:<input name="password"><br>
+         Email to send alerts to:<input name="email"><br>
+         I would like to be updated:<select type="frequency">
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+            <option value="ASAP">ASAP</option>
+            </select>
+        <button type="submit"  value="Submit">Submit</button>
+     </form>
+
+   </body>
+
+</html>
