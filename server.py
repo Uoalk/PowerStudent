@@ -31,12 +31,12 @@ def addUser(usr,pw,email,frequency):
 #this is the decorator. it shows what to return when i go to the website
 @app.route('/')
 def index():
-    return render_template("/bootstrap/index.html")
+    return render_template("bootstrap/index.html")
 
 
 @app.route('/signup')
 def signup():
-    return render_template("signup.html")
+    return render_template("bootstrap/signup.html")
 
 @app.route('/submitDetails', methods=["post"])
 def submitDetails():
@@ -77,4 +77,4 @@ def authenticate():
 
 if __name__ == "__main__":
     addUser("gfitez20","","grantfitez@gmail.com","ASAP")
-    #app.run(debug=True)
+    app.run(debug=True)
