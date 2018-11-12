@@ -18,6 +18,7 @@
 
 
         for(course in grades){
+          
           $("#gradeHolder").append("<table class='gradeTable' id='"+encodeCSS(course)+"'></table>")
           $("#"+encodeCSS(course)).append("<th><h3>"+course+"</h3></th>")
           for(assignment in grades[course]){
@@ -36,7 +37,7 @@
    table{
      display: inline-block;
      border:5px solid black;
-     vertical-align:top; 
+     vertical-align:top;
    }
    </style>
 </html>

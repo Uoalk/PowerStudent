@@ -26,12 +26,12 @@ def addUser(usr,pw,email,frequency):
 
     userData[usr]=""
 
-   
+
 
 #this is the decorator. it shows what to return when i go to the website
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("/bootstrap/index.html")
 
 
 @app.route('/signup')
@@ -47,9 +47,9 @@ def submitDetails():
         return "We were unable to verify your username and password. You have not been added to the database."
 
     addUser(username,password,request.form['email'],request.form['frequency'])
-    
 
-    
+
+
     return "You have been added the database"
 
 @app.route('/gradeDisplay', methods=['POST'])
@@ -61,7 +61,7 @@ def authenticate():
     emailPassword = request.form['emailPassword']
     print(username+" "+password+ email)
 
-    
+
     data[username] = {"username":username, "password":password, "email":email, "email_password":emailPassword}
     with open("names.JSON", 'w') as file:
         json.dump(data, file, indent=2)
