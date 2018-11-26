@@ -11,4 +11,4 @@ First, pull from the GitHub: https://bit.ly/2TSyxSa
 
 Second, open command prompt. Then, access the PowerStudent folder. Once you're in the folder, type: python server.py
 
-![picture](ReadMe1.png)
+![picture](https://github.com/Uoalk/PowerStudent/blob/master/images/ReadMe1.jpg)
