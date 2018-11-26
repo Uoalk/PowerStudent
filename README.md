@@ -2,7 +2,8 @@
 
 # HOW TO GET POWERSTUDENT WORKING
 
-~~What you need to have downloaded~~
+What you need to have downloaded
+
   -FireFox: https://mzl.la/2FJrvvO
   -GeckoDriver: https://bit.ly/2joYOJD
 
