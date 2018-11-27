@@ -1,5 +1,6 @@
 import main
 import json
+import encryption
 
 def updateAll():
 
@@ -8,6 +9,12 @@ def updateAll():
 
     print(names)
 
+masterPw="12345"
+
+
+def getGradesFromUserData(userData):
+    pw=encryption.decrypt(userData["password"],masterPw,userData["salt"])
+    print(pw)
     # while(True):
     #     changes = main.getChanges(main.getStoredGrades(), main.gradeGetter.getGrades(username,password))
     #     gradeData = main.gradeGetter.getGrades(username,password)
@@ -20,3 +27,6 @@ def updateAll():
 
 #while(True):
     #updateAll()
+if __name__ == "__main__":
+    userData=json.loads(open("names.JSON").read())
+    getGradesFromUserData(userData["gfitez20"]);

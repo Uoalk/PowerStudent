@@ -23,10 +23,11 @@ def encrypt(value, key, salt):#https://cryptography.io/en/latest/fernet/?highlig
     key = base64.urlsafe_b64encode(kdf.derive(str.encode(key)))
     f = Fernet(key)
     token = f.encrypt(str.encode(value))
-    return token
+    return token.decode()
 
 
 def decrypt(value, key, salt):
+    value=str.encode(value)
     kdf = PBKDF2HMAC(
          algorithm=hashes.SHA256(),
          length=32,
@@ -36,7 +37,4 @@ def decrypt(value, key, salt):
     )
     key = base64.urlsafe_b64encode(kdf.derive(str.encode(key)))
     f = Fernet(key)
-    return str(f.decrypt(value))
-a=encrypt("hi", "bye", "abc")
-print(a)
-print(decrypt(a,"bye","abc"))
+    return (f.decrypt(value)).decode()

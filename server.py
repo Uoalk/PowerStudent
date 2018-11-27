@@ -4,27 +4,32 @@ import json
 import gradeAlerter, gradeGetter
 import main
 import uuid
+import encryption
 
-masterPw=1235
+masterPw="1235"
 app = Flask(__name__)
 
 
 def genSalt():
     return str(uuid.uuid4().hex)
 
-def xor_crypt_string(plaintext, key):#
-    ciphertext = ''.join(chr(ord(x) ^ ord(y)) for (x,y) in izip(plaintext, cycle(key)))
-    return ciphertext.encode('base64')
-
-def xor_decrypt_string(ciphertext, key):
-    ciphertext = ciphertext.decode('base64')
-    return ''.join(chr(ord(x) ^ ord(y)) for (x,y) in izip(ciphertext, cycle(key)))
-
 def addUser(usr,pw,email,frequency):
     userData=json.loads(open("names.JSON").read())
     salt=genSalt()
+    encryptedPW=encryption.encrypt(pw,masterPw,salt)
 
-    userData[usr]=""
+    data={
+        "email":email,
+        "username":usr,
+        "salt":salt,
+        "password":str(encryptedPW),
+        "frequency":frequency,
+    }
+    userData[usr]=data
+
+    with open('names.json', 'w') as outfile:
+        json.dump(userData, outfile, sort_keys = True, indent = 4,
+               ensure_ascii = False)
 
 
 
@@ -50,7 +55,7 @@ def submitDetails():
 
 
 
-    return "You have been added the database"
+    return render_template("bootstrap/success.html")
 
 @app.route('/gradeDisplay', methods=['POST'])
 def authenticate():
@@ -65,7 +70,7 @@ def authenticate():
     data[username] = {"username":username, "password":password, "email":email, "email_password":emailPassword}
     with open("names.JSON", 'w') as file:
         json.dump(data, file, indent=2)
-        return render_template("gradeDisplay.html", grades=main.getStoredGrades())
+    return render_template("gradeDisplay.html", grades=main.getStoredGrades())
 
 
 
@@ -76,5 +81,4 @@ def authenticate():
 
 
 if __name__ == "__main__":
-    addUser("gfitez20","","grantfitez@gmail.com","ASAP")
     app.run(debug=True)
