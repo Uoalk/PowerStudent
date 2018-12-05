@@ -6,7 +6,7 @@ import main
 import uuid
 import encryption
 
-masterPw="1235"
+masterPw="12345"
 app = Flask(__name__)
 
 
@@ -24,6 +24,7 @@ def addUser(usr,pw,email,frequency):
         "salt":salt,
         "password":str(encryptedPW),
         "frequency":frequency,
+        "cachedGrades":{},
     }
     userData[usr]=data
 
@@ -36,12 +37,12 @@ def addUser(usr,pw,email,frequency):
 #this is the decorator. it shows what to return when i go to the website
 @app.route('/')
 def index():
-    return render_template("bootstrap/index.html")
+    return render_template("index.html")
 
 
 @app.route('/signup')
 def signup():
-    return render_template("bootstrap/signup.html")
+    return render_template("signup.html")
 
 @app.route('/submitDetails', methods=["post"])
 def submitDetails():
@@ -55,7 +56,7 @@ def submitDetails():
 
 
 
-    return render_template("bootstrap/success.html")
+    return render_template("success.html")
 
 @app.route('/gradeDisplay', methods=['POST'])
 def authenticate():
