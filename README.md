@@ -5,6 +5,7 @@
 What you need to have downloaded
 
   -FireFox: https://mzl.la/2FJrvvO
+
   -GeckoDriver: https://bit.ly/2joYOJD
 
 Additionally, you should install selenium:
@@ -12,9 +13,13 @@ Additionally, you should install selenium:
 
 Now for the rest of the dependencies, just open command prompt and type:
   -pip install configparser
+
   -pip install flask
+
   -pip install encryption
+
   -pip install MIMEText
+
   -pip install BeautifulSoup
 
 ![picture](https://github.com/Uoalk/PowerStudent/blob/master/images/ReadMe3.jpg)
