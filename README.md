@@ -10,6 +10,13 @@ What you need to have downloaded
 Additionally, you should install selenium:
   -Go to your command prompt and install selenium
 
+Now for the rest of the dependencies, just open command prompt and type:
+  -pip install configparser
+  -pip install flask
+  -pip install encryption
+  -pip install MIMEText
+  -pip install BeautifulSoup
+
 ![picture](https://github.com/Uoalk/PowerStudent/blob/master/images/ReadMe3.jpg)
 
 First, pull from the GitHub: https://bit.ly/2TSyxSa
@@ -24,3 +31,5 @@ Go to that link, click register, and you should be able to input your PowerSchoo
 
 However, for the email notifier to work, the program must be able to log into your email: https://myaccount.google.com/lesssecureapps
 ![picture](https://github.com/Uoalk/PowerStudent/blob/master/images/ReadMe4.jpg)
+
+YAY! Now it should work!
