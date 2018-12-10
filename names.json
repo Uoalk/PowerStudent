@@ -1,10 +1,1203 @@
 {
-    "gfitez20": {
-        "cachedGrades": {},
-        "email": "gfitez20@kentdenver.org",
-        "frequency": "monthly",
-        "password": "gAAAAABcCCJZ7uN7OGHMOOpTW7ViTGZB3Je0QuO9RWrGAWhgDiF1mD1UvyuGRf90WM2appEgQwZVN_Up4gwVqa0T48D8ZBg==",
-        "salt": "ddb6618044404b468220233698a184a8",
-        "username": "gfitez20"
-    }
+  "gfitez20": {
+    "cachedGrades": {
+      "English 11": {
+        "5eba851eaf22270fde3ed98bcdce0a11ffdddfa50c41bc04bf4732eb3da28534": {
+          "name": "Service Reflection",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "08/28/2018",
+          "category": "PP"
+        },
+        "3a0d9ecd61e29fd8b90fb858a3843d64538b39670e4b74f62f2617806efc1f11": {
+          "name": "Raisin text brought to class",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "08/28/2018",
+          "category": "HW/CW"
+        },
+        "9821d3618198137e5ab1153b323cbeaa5c8520cf8b5b897050635b8c82017535": {
+          "name": "Raisin 1.1 Reading Journal",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "08/29/2018",
+          "category": "HW/CW"
+        },
+        "71808586ebfc51ba70978545f6db02d911ecf9b818aea1f33f2ef989fceacfd9": {
+          "name": "Raisin 1.2 Reading Journal",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "08/30/2018",
+          "category": "HW/CW"
+        },
+        "d7c70fe8fda2e64f629570e7e830030ab495b1c0fc6bcd758655257bf4496257": {
+          "name": "Raisin 2.1 Reading Journal",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "09/04/2018",
+          "category": "HW/CW"
+        },
+        "92ed1bd4de31e357c54d08100c98017995092335f4936ec04c06f7696c8d2039": {
+          "name": "Raisin Working Thesis",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "09/05/2018",
+          "category": "HW/CW"
+        },
+        "99c8813b2986abb1a82f474ae94c963ecf57436b462bba1da0dbda9a508d2063": {
+          "name": "Raisin Draft",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "09/10/2018",
+          "category": "PP"
+        },
+        "5720e5e45cc54b2817116947735aaa6cfe2482bf01dbd9907801ae563bb79261": {
+          "name": "Clybourne Socratic",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "09/13/2018",
+          "category": "CW"
+        },
+        "c889f43c1d941ddac7f803a9419939c5c0d3af171f6769462ec74879e69b7184": {
+          "name": "Clybourne text brought to class",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "09/13/2018",
+          "category": "CW"
+        },
+        "4f48364251cddde98dfa817c8cfd882453c4af3e78077f98aabd1a73f23f67c1": {
+          "name": "Raisin Analysis Paragraph",
+          "rawScore": "23/25",
+          "earnedPoints": "23",
+          "totalPoints": "25",
+          "date": "09/14/2018",
+          "category": "PP"
+        },
+        "f7b94d417a9df4c9d25abdf4b50f6bf222369eaf8bb0688b54f9f7e18b53dea2": {
+          "name": "2 Qs: Clybourne Park Act 1",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "09/17/2018",
+          "category": "HW/CW"
+        },
+        "d23ea1ca4346a64f4e1761b2934e5f5d0e276c8ca037a088679d92234319dc92": {
+          "name": "Clybourne Act 1 Socratic Seminar",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "09/17/2018",
+          "category": "CW"
+        },
+        "db2190713c90488efcdbb2ccf72dae0a0e4795221844709bef5f0f16ff1417ab": {
+          "name": "2 Qs: Clybourne Act II, pg 158",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "09/20/2018",
+          "category": "HW/CW"
+        },
+        "595b3fe4f12a3d10fd390273af336df8ab45148b399895daca04766b5d476e24": {
+          "name": "Clybourne Socratic Act II, pg 158",
+          "rawScore": "1/1",
+          "earnedPoints": "1",
+          "totalPoints": "1",
+          "date": "09/20/2018",
+          "category": "CW"
+        },
+        "f481144271075d80b4fbda025ed499f4653c0315ee37a60147bc5d65856cc8e0": {
+          "name": "Onion/Satire 3-2-1 Discussion Post",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "09/24/2018",
+          "category": "HW/CW"
+        },
+        "c7e7b33ec349d024da7792e6429db8d76dcdaef3b484a9954f374af35eee64c2": {
+          "name": "Final Socratic: Clybourne Park",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "09/25/2018",
+          "category": "CW"
+        },
+        "053c56234b9e25dc3f0b8087db5414e2431435629c28e969c8bab702e7c6ed13": {
+          "name": "2 Qs: Clybourne End of Play",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "09/25/2018",
+          "category": "HW/CW"
+        },
+        "3362104f53db336c8203bb081b4acecccd83a807e0f660178532a80b3bc2c249": {
+          "name": "Quote ID Quiz: Raisin/Clybourne",
+          "rawScore": "18.5/20",
+          "earnedPoints": "18.5",
+          "totalPoints": "20",
+          "date": "09/28/2018",
+          "category": "QT"
+        },
+        "3e81d66e1717edb38e6f22d48ff547b29276a0470d1882b0c460e78bbd389678": {
+          "name": "Satire Creative Writing",
+          "rawScore": "13.8/15",
+          "earnedPoints": "13.8",
+          "totalPoints": "15",
+          "date": "10/12/2018",
+          "category": "PP"
+        },
+        "0eda0a742bef6c47c7fd417c4fe81889a48f16f57bb9d8eb3a07255c872f7460": {
+          "name": "Socratic: Beloved, Ch 4-5",
+          "rawScore": "2/2",
+          "earnedPoints": "2",
+          "totalPoints": "2",
+          "date": "10/26/2018",
+          "category": "CW"
+        },
+        "0a436174c895f4329b12fdc5e1fc8ff2269583f76ecee71659d9e32c65e5038c": {
+          "name": "Membean Quiz #1",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "11/02/2018",
+          "category": "QT"
+        },
+        "d21dcbd32b95188bce3883afa5b4071893250318fa006c8d4a4fd59f2d69250c": {
+          "name": "MLK Creative Writing Piece",
+          "rawScore": "--/15",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "11/19/2018",
+          "category": "PP"
+        },
+        "51c713a364c7b4a5a714cb5d0dc89ca51cfe6434017f860494d9bbbaeedc5684": {
+          "name": "Raisin Quote Response Journal",
+          "rawScore": "38/40",
+          "earnedPoints": "38",
+          "totalPoints": "40",
+          "date": "11/20/2018",
+          "category": "PP"
+        },
+        "3dfcff541bfdfc84438e07dc4394565684148df8db89fbf105ded7324c9704fd": {
+          "name": "Beloved Ch 24-25 Reading Questions",
+          "rawScore": "7/7",
+          "earnedPoints": "7",
+          "totalPoints": "7",
+          "date": "11/26/2018",
+          "category": "HW/CW"
+        },
+        "80aa2da4f2a6173603f328bebd65a25050939755e88879ebdfae4ef0fd958b46": {
+          "name": "Membean Quiz #2",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "11/26/2018",
+          "category": "QT"
+        },
+        "dfd365b35caff1bcd106551161845fd5ab2a67483bedecfc096fd32c9bc3c66e": {
+          "name": "Beloved Ch 27-28 Seminar",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "11/30/2018",
+          "category": "HW/CW"
+        },
+        "e0bfa0cafccc49017b2fbe1e2fc7d563562a4c7eefb08688791f05d3d99c61e2": {
+          "name": "Beloved Ch 26 Seminar",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "11/30/2018",
+          "category": "HW/CW"
+        },
+        "40b67b861c20595f2b098e30cedda8694b31372913e951ca216809e0a083d7fc": {
+          "name": "Beloved Motif Presentation",
+          "rawScore": "--/45",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "12/05/2018",
+          "category": "PP"
+        }
+      },
+      "Chemistry Honors": {
+        "4c2ac4918a8f255d24f295d30f850c896db6bd4099ca31bb859029bbeef8c21d": {
+          "name": "Signed Safety Contract",
+          "rawScore": "--/5",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "08/23/2018",
+          "category": "HW"
+        },
+        "6da9942002502ec3a4f8b8f7b497dbcfd0f1606a2abda26f4169f3ac69e2eabb": {
+          "name": "Safety Quiz",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/27/2018",
+          "category": "HW"
+        },
+        "82b7202877ba8308e964a9a4b3ebbc24e028dbb2edbc8909976bf759b5f9fc28": {
+          "name": "Element Quiz",
+          "rawScore": "19.5/20",
+          "earnedPoints": "19.5",
+          "totalPoints": "20",
+          "date": "08/31/2018",
+          "category": "QZ"
+        },
+        "6bd70cdea37e3e3b4f57e460b5907e2f679079384f6f7231eface1fda172fe55": {
+          "name": "Textbook pg. 27 #15,17, 27, 43, 47",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/31/2018",
+          "category": "HW"
+        },
+        "a08faecfc52710ae1fc9291e0c3f56b27358801c2070049035e7ed780736728c": {
+          "name": "Copper Sulfur Lab",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "09/04/2018",
+          "category": "Lab"
+        },
+        "de1d1917ebfa14cf34c694b8a6a65f8f5e079f04fbfd450281e1c6ad615f1883": {
+          "name": "Density of CO2 lab",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "09/11/2018",
+          "category": "Lab"
+        },
+        "4736ea711b9c63d13d1145810c6d29af364edb88fa91a5cf63619e64fc135c7a": {
+          "name": "Quiz 1.1 - safety, equipment, measurement, matter",
+          "rawScore": "29.5/30",
+          "earnedPoints": "29.5",
+          "totalPoints": "30",
+          "date": "09/12/2018",
+          "category": "QZ"
+        },
+        "8713fd485a6717cb10b91fcc012e48bc3ea6565b3ff625e79fe10616e8de4380": {
+          "name": "Specific Heat of a Metal Lab",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "09/18/2018",
+          "category": "Lab"
+        },
+        "0e10227011456ada546304b208f56065d97c327cb28e75dadc0f6ad65ad690c1": {
+          "name": "Unit 1 EXAM - measurement and matter",
+          "rawScore": "100/100",
+          "earnedPoints": "100",
+          "totalPoints": "100",
+          "date": "09/21/2018",
+          "category": "TST"
+        },
+        "d3dfd117632aa6e2e137b82a152ead66b50ba1b8575fb27f42aca1e26d8e4ce8": {
+          "name": "Quiz 2.1 - Atoms and Mole Conversions",
+          "rawScore": "24/24",
+          "earnedPoints": "24",
+          "totalPoints": "24",
+          "date": "10/05/2018",
+          "category": "QZ"
+        },
+        "774bd100dc04a57cc7d5f96d98f321ba9b71e8ccec0370ed4b377c7ea08ff191": {
+          "name": "Mole Conversions Lab",
+          "rawScore": "29/30",
+          "earnedPoints": "29",
+          "totalPoints": "30",
+          "date": "10/09/2018",
+          "category": "Lab"
+        },
+        "a736dbeb924a995086fc1e7439a723cd356642e008141ee790abb2e7a282c365": {
+          "name": "MgO Empirical formula lab",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "10/12/2018",
+          "category": "Lab"
+        },
+        "4c5b4d201a8a28b9bfc1331338ca498055fc1b198005f9e0424c5026c652e5e4": {
+          "name": "Unit 2 EXAM - Atomic Structure and the Mole",
+          "rawScore": "100/100",
+          "earnedPoints": "100",
+          "totalPoints": "100",
+          "date": "10/16/2018",
+          "category": "TST"
+        },
+        "3246f508d1ab263563bd32703f3f4ca8131d93c2087d92c36e2780ce9dcbe412": {
+          "name": "Polyatomic Ion Quiz",
+          "rawScore": "13/13",
+          "earnedPoints": "13",
+          "totalPoints": "13",
+          "date": "10/25/2018",
+          "category": "QZ"
+        },
+        "8375fe210ce481c7be92ec28d1023db8f8e890442cc85a503c3dfd74f50ffb70": {
+          "name": "Quiz 3.1 - Nomenclature",
+          "rawScore": "28.5/29",
+          "earnedPoints": "28.5",
+          "totalPoints": "29",
+          "date": "10/31/2018",
+          "category": "QZ"
+        },
+        "abe43a32e2b4f15c7c16e3a0206f7b09cf414e032cd75c512f9ce759c7b2c80a": {
+          "name": "Quiz 3.2 - Predicting Products of Rxns",
+          "rawScore": "19/20",
+          "earnedPoints": "19",
+          "totalPoints": "20",
+          "date": "11/07/2018",
+          "category": "QZ"
+        },
+        "89f538cce7b86d7f37d254d2e32c3eff723310e4524e56bed68e785c9450f687": {
+          "name": "Unit 3 EXAM - Nomenclature and chemical reactions",
+          "rawScore": "81.7/100",
+          "earnedPoints": "81.7",
+          "totalPoints": "100",
+          "date": "11/15/2018",
+          "category": "TST"
+        },
+        "114dd05b675209a880a06da421ed99c50d2390bd811f9dccce7a75cd5fd58fca": {
+          "name": "Quiz 4.1 - Stoichiometry",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "11/27/2018",
+          "category": "QZ"
+        }
+      },
+      "AP Calculus BC": {
+        "f6544c00fe57bdfa1d5ce4b1996175a92f1f0bf3af612f8ac39dfc7a18ba7839": {
+          "name": "Diagnostic Quiz: Ch. 1-2",
+          "rawScore": "97/100",
+          "earnedPoints": "97",
+          "totalPoints": "100",
+          "date": "08/31/2018",
+          "category": "QZ"
+        },
+        "d59bf975f955cc629d296efad61abd530b76011cff09e768fbbee63dcbb4a0b3": {
+          "name": "Quiz: 3.1-3.3",
+          "rawScore": "94/100",
+          "earnedPoints": "94",
+          "totalPoints": "100",
+          "date": "09/17/2018",
+          "category": "QZ"
+        },
+        "6d71130af23faf165a79a0637e37bb58a25de13ffc8cb38cbad1bc607259d872": {
+          "name": "Quiz: 3.4, 3.6",
+          "rawScore": "92/100",
+          "earnedPoints": "92",
+          "totalPoints": "100",
+          "date": "09/28/2018",
+          "category": "QZ"
+        },
+        "f99d3aad614aa6a04deb3620e9b4f6ec0dd17918b1113b6d2df7917f3584c3ae": {
+          "name": "Quiz: 3.9. 4.1",
+          "rawScore": "50/50",
+          "earnedPoints": "50",
+          "totalPoints": "50",
+          "date": "10/08/2018",
+          "category": "QZ"
+        },
+        "2d5ca23ba413593cf8fe883a9f0f7bd014f121326c207ef5b6b735087336bce1": {
+          "name": "Quiz: 4.2-4.3",
+          "rawScore": "93/100",
+          "earnedPoints": "93",
+          "totalPoints": "100",
+          "date": "10/17/2018",
+          "category": "QZ"
+        },
+        "ada525f32835cccdbf846bf36d8a10c979ec2b519e455d501a6050853aecba45": {
+          "name": "Quiz: 4.4, Trapezoidal Sums",
+          "rawScore": "99/100",
+          "earnedPoints": "99",
+          "totalPoints": "100",
+          "date": "11/07/2018",
+          "category": "QZ"
+        },
+        "8da55cb28235246436da4b904a4c1b00b512308eaee734edaa898dee5817813d": {
+          "name": "Quiz: 5.1-5.5",
+          "rawScore": "99/100",
+          "earnedPoints": "99",
+          "totalPoints": "100",
+          "date": "11/29/2018",
+          "category": "QZ"
+        }
+      },
+      "AP Physics C: Mechanics": {
+        "7735c596a183c78c9799f8ad3b1f39e80b23609cc66b4ca0ee8bc64a9e41857e": {
+          "name": "HW 1.1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/24/2018",
+          "category": "HW"
+        },
+        "98753f17e950224409db92d4c6e9f0ee2e5400aa336b00cb289877b94112c5d5": {
+          "name": "HW 1.2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/27/2018",
+          "category": "HW"
+        },
+        "5ae82c1a69c9b8ac182bae6e204dbfce13153d3c3ca1737ec6bc66bd5848fe26": {
+          "name": "HW 1.3",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/05/2018",
+          "category": "HW"
+        },
+        "927bd5119c110d2ab82990ab491ebaa483d840b2d488f98c9e3e39aa1d0ab63b": {
+          "name": "Quiz 1 - Kinematics",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "09/06/2018",
+          "category": "QZ"
+        },
+        "6fb2d21492b72e981283597a30b63139380bc2a6c1d1c1607a19f4e6bf205692": {
+          "name": "HW 1.4 Lab Quad Fit",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/06/2018",
+          "category": "HW"
+        },
+        "9c4971e6172f1f6e1778f47b0ae9dff6d542d5bd0b848bdba86ecb26f00e658a": {
+          "name": "HW 2.1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/01/2018",
+          "category": "HW"
+        },
+        "89d003c3805410a1bec2a8b57afb103a68745d65ee87fcf59fa1f66968b1b6dc": {
+          "name": "HW 2.2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/04/2018",
+          "category": "HW"
+        },
+        "09bef58bbb540ad8412ae409141ee6bc348ecc474952636417216cab4c7bf521": {
+          "name": "Quiz 2.1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/05/2018",
+          "category": "QZ"
+        },
+        "eed362c8e258f2036b27d091ee29ac1b0336d78daaf33a9b0a654ef20d0bc2d0": {
+          "name": "HW 2.3",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/05/2018",
+          "category": "HW"
+        },
+        "d102ff9b6b22662d37a121a7c9025a28fb8ca2282f6dafbf01ff705803ef8868": {
+          "name": "Unit 1 Test",
+          "rawScore": "80/80",
+          "earnedPoints": "80",
+          "totalPoints": "80",
+          "date": "10/06/2018",
+          "category": "MAJ"
+        },
+        "6cf212e7f5f0bc3892c12b0387340234c2d6fcdab0d22616a010439feabce0d4": {
+          "name": "Unit 1 Test Revisions",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/06/2018",
+          "category": "MAJ"
+        },
+        "ed773807407e11ed4ac5e26fc95b03ccf21a45d6e8e9d051af1442b74bcc8f6d": {
+          "name": "Mastery Project",
+          "rawScore": "--/100",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "11/13/2018",
+          "category": "MAJ"
+        },
+        "8292d3325f2e27093d8acfbfd33f16804206d10a7352977eb4455f93139f8a33": {
+          "name": "HW 3.2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/15/2018",
+          "category": "HW"
+        },
+        "e2f7b686609c8032ca5ea2402b1c120b3a3e5ddede1320085c45c079b80bec05": {
+          "name": "HW 3.3 Force Packet Progress",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "12/06/2018",
+          "category": "HW"
+        }
+      },
+      "Chinese IV Honors": {
+        "6b50d840c81cbc4f086327eacb998d0349ae2b0004641b9d4f6eaa9bfccaa97e": {
+          "name": "Class Performance",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/30/2018",
+          "category": "Class Participa"
+        },
+        "55766b4ab581733af6aba604326b5c4e6fb91d98d1611db56e44c7d4671a1dce": {
+          "name": "Review Project _Semester 1",
+          "rawScore": "19/20",
+          "earnedPoints": "19",
+          "totalPoints": "20",
+          "date": "08/30/2018",
+          "category": "PROJ"
+        },
+        "be354ef39be7b640af78d7760f8473dba8b7d626743537a447fd10d36bb15d26": {
+          "name": "Review Project Summary",
+          "rawScore": "9.4/10",
+          "earnedPoints": "9.4",
+          "totalPoints": "10",
+          "date": "08/31/2018",
+          "category": "HW"
+        },
+        "ab724bda01f3fd07d38bc1ef5006cc929a612509206d13d965cc24a0d996a3ce": {
+          "name": "Vocabulary Review",
+          "rawScore": "--",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "09/03/2018",
+          "category": "HW"
+        },
+        "35b8d8f7059bf5c2d296670311bede1e11225b999138233d6bc98c34a897586a": {
+          "name": "Lesson 15 VQ 1-1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/04/2018",
+          "category": "QZ"
+        },
+        "07d4333f4d2a390c40171914955ad5e298d6bedf3df154db0e06f1b4a1ef443c": {
+          "name": "Lesson 15 VQ 1-2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/06/2018",
+          "category": "QZ"
+        },
+        "d223e74e8f7d462cc0a8ea908b29b758639e26426e86fb425682757d2c23aab9": {
+          "name": "Homework Cycle 2",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "09/11/2018",
+          "category": "HW"
+        },
+        "32002a11d597f694ffbebf98c1a09525c983995df5b52b324a7e19e51e97cdb0": {
+          "name": "Class Performance Cycle 2",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "09/11/2018",
+          "category": "Class Participa"
+        },
+        "61d62afe06bdcfd5ea54913ba3b25cd86b948cccf1e1276ca1ca7757398d5030": {
+          "name": "Lesson 15 VQ2-1",
+          "rawScore": "4.9/5",
+          "earnedPoints": "4.9",
+          "totalPoints": "5",
+          "date": "09/12/2018",
+          "category": "QZ"
+        },
+        "5559bdd90cc29deb21aedf41a1f93add9c3cdb6bf6ba34d9d3d1e64a1e1aa7ad": {
+          "name": "Lesson 15 VQ2-2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/13/2018",
+          "category": "QZ"
+        },
+        "9a8b9475e044f3b236140bb6129367ecc6ca6a626805a73fc56560dc23d4d0cf": {
+          "name": "Lesson 15 Test",
+          "rawScore": "20.3/22",
+          "earnedPoints": "20.3",
+          "totalPoints": "22",
+          "date": "09/20/2018",
+          "category": "TST"
+        },
+        "a6979789649a76f0d9b3fd364f1da9a68047fc4e78ca970919d2173c19c4f304": {
+          "name": "Homework Cycle 3",
+          "rawScore": "14.8/15",
+          "earnedPoints": "14.8",
+          "totalPoints": "15",
+          "date": "09/21/2018",
+          "category": "HW"
+        },
+        "9e9705623d7f117807b8cd4b8cbd5711de58d44227010373cabb2697d94a952c": {
+          "name": "Class Performance Cycle 3",
+          "rawScore": "4.7/5",
+          "earnedPoints": "4.7",
+          "totalPoints": "5",
+          "date": "09/21/2018",
+          "category": "Class Participa"
+        },
+        "0d8e90c9093da03621bff2ec8ff89093149cc4829e188ae1133a50692c3082a4": {
+          "name": "Mid-Autumn Day Message",
+          "rawScore": "9.8/10",
+          "earnedPoints": "9.8",
+          "totalPoints": "10",
+          "date": "09/27/2018",
+          "category": "PROJ"
+        },
+        "b98840ee61cbbc3df5dc0a6732bb36c142869701d32c41580fb280d6aaff0ff8": {
+          "name": "Chinese Poem",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/27/2018",
+          "category": "PROJ"
+        },
+        "4da94250e44afab1f5ab74dffef69fc4d08cf956c1974c82a1661fefcfa4e833": {
+          "name": "Lesson 15 Story Writing",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "09/27/2018",
+          "category": "SW"
+        },
+        "18ea0e463aa5ff85aafcd11c9047f74edf54679812d2437745680709f5ee122b": {
+          "name": "Class Performance Cycle 4",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "10/02/2018",
+          "category": "Class Participa"
+        },
+        "9f8a5da92bef1bb3c53c32aeec3c1eaa7ab110ab1c09fbfcb2000bdfea9f38d5": {
+          "name": "Homework Cycle 4",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "10/02/2018",
+          "category": "HW"
+        },
+        "ba798bf8a6305de41f2030bae628fe269fd525603c631c6b4106f7f7f0451617": {
+          "name": "Lesson 16 VQ1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/02/2018",
+          "category": "QZ"
+        },
+        "2dda68dd5337b1557913ed0813e9b810657cc467dc1354936712ead7b9b3b621": {
+          "name": "Lesson 16 VQ2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/11/2018",
+          "category": "QZ"
+        },
+        "8d740631daabf576da242a54756c7ab1b43698a6aea4de981c23268f43b76222": {
+          "name": "Class Performance Cycle 5",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "10/12/2018",
+          "category": "Class Participa"
+        },
+        "f6cecd6dacd46e8d1b2d37ca551424f63ed29d6b80def9077739fe78e0f9e8b8": {
+          "name": "Homework Cycle 5",
+          "rawScore": "19.8/20",
+          "earnedPoints": "19.8",
+          "totalPoints": "20",
+          "date": "10/12/2018",
+          "category": "HW"
+        },
+        "e1b56996e4719cd0c153e2422fec86caf3988efe1f1e98ac533ce166624a3ef8": {
+          "name": "Discussion - Stone-Banks' Presentation",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/12/2018",
+          "category": "PROJ"
+        },
+        "0080c9810df2786f75a335b295b6b9a9b35351d5192da8c84d02b33ffb6e303b": {
+          "name": "Lesson 15 Short Writing Recording",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/15/2018",
+          "category": "SW"
+        },
+        "f27973499270d175f29964e003713bbb2080ac4687bc58e42d3472499bfcba5d": {
+          "name": "Lesson 16 Project_Dating",
+          "rawScore": "14.8/15",
+          "earnedPoints": "14.8",
+          "totalPoints": "15",
+          "date": "10/24/2018",
+          "category": "PROJ"
+        },
+        "f82f680d4e1cabf683586875228eec420ab37319c694aa86c1dc0220f7c1547c": {
+          "name": "Class Performance Cycle 6",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "10/25/2018",
+          "category": "Class Participa"
+        },
+        "329c8414c26efb2a84cb5d4e8832e33feccfadd3f78318d5c4dcb58abaf40dd4": {
+          "name": "Homework Cycle 6",
+          "rawScore": "14.7/15",
+          "earnedPoints": "14.7",
+          "totalPoints": "15",
+          "date": "10/25/2018",
+          "category": "HW"
+        },
+        "c75dc87de45363bd514134639d68ef244493454a90eb56c8ce1f0c3016618681": {
+          "name": "Lesson 16 Test",
+          "rawScore": "19.5/20",
+          "earnedPoints": "19.5",
+          "totalPoints": "20",
+          "date": "10/26/2018",
+          "category": "TST"
+        },
+        "f7f965e9fe52eaa8f4bc4786c321c79b22ec5de4b65611d3efb28dfaade476d2": {
+          "name": "L17 VQ1-1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/05/2018",
+          "category": "QZ"
+        },
+        "b7d98e5667ce59249539695431730ade4ddd7d981878bf6e94366b0f6bdb519a": {
+          "name": "Lesson 16 Writing",
+          "rawScore": "4.7/5",
+          "earnedPoints": "4.7",
+          "totalPoints": "5",
+          "date": "11/05/2018",
+          "category": "SW"
+        },
+        "4ca3007399f7ec978abffc835586e60e46b7a77b1d6f1b12c29597524bfbc520": {
+          "name": "Class Performance Cycle 7",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "11/06/2018",
+          "category": "Class Participa"
+        },
+        "4890b231e80408fed21147c2c0bc7c77ab627baf0397688d0e3b971ce5bc698a": {
+          "name": "Homework Cycle 7",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "11/06/2018",
+          "category": "HW"
+        },
+        "c4204f2a40556baa63fb2c62b464a38901c6f225ed9365140fd7cdb0229bde0a": {
+          "name": "Lesson 17 Vocab Quiz 1-2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/06/2018",
+          "category": "QZ"
+        },
+        "589307a13e6af915ebc0067834313a35dc1ea96c04bba6f5bd594de8ea7a69e1": {
+          "name": "Lesson 16 Story Recording",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/09/2018",
+          "category": "HW"
+        },
+        "0bd4d003f27915f40fa33fb91d44d3a7700cded49438e28e02ee7f0204b01b75": {
+          "name": "Lesson 17 VQ2-1",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/12/2018",
+          "category": "QZ"
+        },
+        "44fdc5f2da2b22198af53485716b8532d0dcfaaa9a7b9f1fd20dbeb62474dc4a": {
+          "name": "Lesson 17 VQ2-2",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/14/2018",
+          "category": "QZ"
+        },
+        "d0e438747ff1306c5593523e992d28e88e1322a53c709eded6b0d61822ac7b9d": {
+          "name": "Class Performance Cycle 8",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "11/15/2018",
+          "category": "Class Participa"
+        },
+        "0dbc85bcc9e169d008b3b514d77c93ac92cef4017dda87ee5baab3476693dc70": {
+          "name": "Homework Cycle 8",
+          "rawScore": "14.7/15",
+          "earnedPoints": "14.7",
+          "totalPoints": "15",
+          "date": "11/15/2018",
+          "category": "HW"
+        },
+        "3184b1b122cd5080be82c533b365f63ff0f650b93a1cd7dcdbe73e7dc692f3a2": {
+          "name": "Lesson 17 Test",
+          "rawScore": "19.4/20",
+          "earnedPoints": "19.4",
+          "totalPoints": "20",
+          "date": "11/28/2018",
+          "category": "TST"
+        },
+        "15998f3355db37ac614d4e95bfb68f26a1e56adaad628393efd9e24ff079244c": {
+          "name": "Homework Cycle 9",
+          "rawScore": "9.7/10",
+          "earnedPoints": "9.7",
+          "totalPoints": "10",
+          "date": "11/29/2018",
+          "category": "HW"
+        },
+        "eb6763bd9e027698b6ce1141deeea216c8208e3dd3b1a5a0bfbd07f1cb94e23e": {
+          "name": "Class Performance Cycle 9",
+          "rawScore": "4.8/5",
+          "earnedPoints": "4.8",
+          "totalPoints": "5",
+          "date": "11/29/2018",
+          "category": "Class Participa"
+        },
+        "ef4dad22a5a80dd5a8436b9854ef90af9efb3cf4776655e3ac87e46544811087": {
+          "name": "Ideal House",
+          "rawScore": "12.5/13",
+          "earnedPoints": "12.5",
+          "totalPoints": "13",
+          "date": "12/04/2018",
+          "category": "PROJ"
+        },
+        "bc7130e1766bf7b14060ad61da992bb0df22725133e4bbcc3c0383f886a75df5": {
+          "name": "Lesson 18 VQ1-1",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "12/04/2018",
+          "category": "QZ"
+        },
+        "f458e40716ca0bbb42bf59722a049b8ec6d732d057559e0a3a89392f3bf3aa27": {
+          "name": "Lesson 18 VQ1-2",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "12/05/2018",
+          "category": "QZ"
+        },
+        "3d63dd1d0648a880bf0f413a110d23c6985fd7a8a14e7080c7d46f430e7363c4": {
+          "name": "Class Performance Cycle 10",
+          "rawScore": "--/5",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "12/10/2018",
+          "category": "Class Participa"
+        }
+      },
+      "Advanced Topics: Data Structures": {
+        "832d7f7db9145deb2987571d1da42df088c7fda83e4aad5426cb188f49d49cb5": {
+          "name": "Create a Github Account",
+          "rawScore": "0",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "08/23/2018",
+          "category": "HW"
+        },
+        "9e0edaf7d3ac549f71201b6c76a0807acecc95f59c7a22c975d24b8e127379d8": {
+          "name": "Name Game",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/23/2018",
+          "category": "HW"
+        },
+        "07c140496a7eff89d6ce02ba9db1d6e5c9a8c784522048c0863878ade3c79dab": {
+          "name": "Github basics- Make a Node",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "08/24/2018",
+          "category": "HW"
+        },
+        "cc4108755e642298809689081ff47f6295166bbb5b8109fcc024b25dd4dd77cf": {
+          "name": "Git Learning Check 1",
+          "rawScore": "6/6",
+          "earnedPoints": "6",
+          "totalPoints": "6",
+          "date": "08/24/2018",
+          "category": "QZ"
+        },
+        "28ae71401a6c2d817a89c5e31259cb3f689afa9f094735025c40c96a696bec7d": {
+          "name": "git branch exploration",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "08/31/2018",
+          "category": "HW"
+        },
+        "597314a419d1092dde3eaf58074cfef70b88483e8cbad3ea5527b950cd0866f1": {
+          "name": "git merge and remote",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "09/04/2018",
+          "category": "HW"
+        },
+        "6ad6c6205c0046f01c84de8cc2056549fd4cd4368cbe1c8739080799ff9d056a": {
+          "name": "Branching and ArrayList",
+          "rawScore": "9.7/10",
+          "earnedPoints": "9.7",
+          "totalPoints": "10",
+          "date": "09/05/2018",
+          "category": "HW"
+        },
+        "8f0f9b11562bcadea275114cf00b79142678eb01a03490e20c7abe233eb058cd": {
+          "name": "Git Learning Check",
+          "rawScore": "6.8/7",
+          "earnedPoints": "6.8",
+          "totalPoints": "7",
+          "date": "09/05/2018",
+          "category": "QZ"
+        },
+        "444090abbbd1927b471ed1c69b5c40052606480aed2609df2494b679d45953ee": {
+          "name": "Make a Stack",
+          "rawScore": "8/8",
+          "earnedPoints": "8",
+          "totalPoints": "8",
+          "date": "09/12/2018",
+          "category": "HW"
+        },
+        "bbd1a6850bcb98602fbadc76be0f41323f37ab8533e0415a86d0533a97c9fcc5": {
+          "name": "Postfix Calculator",
+          "rawScore": "8/8",
+          "earnedPoints": "8",
+          "totalPoints": "8",
+          "date": "09/13/2018",
+          "category": "HW"
+        },
+        "c9f078347ecaf9be3adf466970fa45d6ca56dddc9934030c1b8466e4da6d9465": {
+          "name": "Make a Queue",
+          "rawScore": "6/6",
+          "earnedPoints": "6",
+          "totalPoints": "6",
+          "date": "09/14/2018",
+          "category": "HW"
+        },
+        "0bee08ea170f1f7c952111fd18df04cb10051f29b552194d9fe114754fc0678e": {
+          "name": "20Time Proposal",
+          "rawScore": "20/20",
+          "earnedPoints": "20",
+          "totalPoints": "20",
+          "date": "09/18/2018",
+          "category": "TST"
+        },
+        "088f25c573a11c1904ed19dd92eff2a8962082c93ce01f67ceb138eaa3e87a59": {
+          "name": "Minimum Stack",
+          "rawScore": "8/8",
+          "earnedPoints": "8",
+          "totalPoints": "8",
+          "date": "09/18/2018",
+          "category": "HW"
+        },
+        "3ea6a5d8db8d70deac10acb011381a844518db5c6193fdc411bd61a48fb2ca7f": {
+          "name": "Making a Queue from 2 Stacks",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/21/2018",
+          "category": "HW"
+        },
+        "731c1793de2d7153c33b7cd08fb8d4e671c47d3f5fdcd3deac3893b339839d12": {
+          "name": "Stack and Queue Quiz",
+          "rawScore": "26/26",
+          "earnedPoints": "26",
+          "totalPoints": "26",
+          "date": "09/24/2018",
+          "category": "QZ"
+        },
+        "71cdade7474cb214212c1eb60e6a6faad5a89ef9aec66f547291b1f9297a6d5b": {
+          "name": "String Compression Intro",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/25/2018",
+          "category": "HW"
+        },
+        "9a8e6519e7556451ea42fee4359041e4429389b80bd566192c7047bd7f056be5": {
+          "name": "20 Percent Log",
+          "rawScore": "5.2/5",
+          "earnedPoints": "5.2",
+          "totalPoints": "5",
+          "date": "09/27/2018",
+          "category": "TST"
+        },
+        "fb3e1a49fbada57bffe9f66d511e450c1f0ea2c21fe7516f5901c45f4e25f2fc": {
+          "name": "Array Dictionary",
+          "rawScore": "4.7/5",
+          "earnedPoints": "4.7",
+          "totalPoints": "5",
+          "date": "09/27/2018",
+          "category": "HW"
+        },
+        "b31ca216a56ee6d2cd2cf732f8d5494e21cca413b54d4f15191254048eb9a646": {
+          "name": "Dictionary Compression",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "09/28/2018",
+          "category": "HW"
+        },
+        "05e7168bc7c09b277dcb6e88871b5e5dd7bc0a21b48b57c1d9741e5257bfdbf6": {
+          "name": "HashTable",
+          "rawScore": "7/5",
+          "earnedPoints": "7",
+          "totalPoints": "5",
+          "date": "10/03/2018",
+          "category": "HW"
+        },
+        "8de03ba0dfd157bad5e19bd8b0f0da0fd374a3f56d5204998193ad97281cdca2": {
+          "name": "20% Log 10/8",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/08/2018",
+          "category": "TST"
+        },
+        "ee7160a3d00946abfc49ede8ec10b975451668e93824c13b6616a34947deff95": {
+          "name": "Binary Search Tree! (BST)",
+          "rawScore": "--/10",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "10/09/2018",
+          "category": "HW"
+        },
+        "2da590ae2b72f2fee6d04589d48763300300c5e206a22fe8264fbb650390b23a": {
+          "name": "Is BST?",
+          "rawScore": "4/4",
+          "earnedPoints": "4",
+          "totalPoints": "4",
+          "date": "10/12/2018",
+          "category": "HW"
+        },
+        "c4ea70afccc58f638a8308f0d3d0009a74cc5884cd0a6d2bb29113e3aa0224c0": {
+          "name": "RedBlackTree Day 1",
+          "rawScore": "6/6",
+          "earnedPoints": "6",
+          "totalPoints": "6",
+          "date": "10/16/2018",
+          "category": "HW"
+        },
+        "4aa155e98585108b767aaeeeec9f277788bb96f89380f66dad8e6df1eeaf632a": {
+          "name": "20% Log 10/22",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "10/22/2018",
+          "category": "TST"
+        },
+        "99753321d5dfbdbb8799d44c6f377b3e9741bb160f2e3eda067eb934237bdae2": {
+          "name": "20% Log 11/01",
+          "rawScore": "7/7",
+          "earnedPoints": "7",
+          "totalPoints": "7",
+          "date": "11/01/2018",
+          "category": "TST"
+        },
+        "f01d2d4a8dcc743abcf70772501708791955d4325dc4974d9992f579427ac79a": {
+          "name": "Complete RBT/BH/AVL",
+          "rawScore": "10/10",
+          "earnedPoints": "10",
+          "totalPoints": "10",
+          "date": "11/06/2018",
+          "category": "HW"
+        },
+        "1d53ece18b6d79b888ecc3712a2ff929ecf55f1cc917c386a08dd5a9b17125cb": {
+          "name": "Dictionary + Tree Quiz",
+          "rawScore": "19/20",
+          "earnedPoints": "19",
+          "totalPoints": "20",
+          "date": "11/07/2018",
+          "category": "TST"
+        },
+        "5e942e656e6365abf6a58eda034cf071d4003fab0b205db2c134cf94b59851a9": {
+          "name": "RegEx Practice",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "11/08/2018",
+          "category": "HW"
+        },
+        "0bc17b3a4b5848b97262db06b3a776d101293a406dcf4acfaa0196aab6898cc9": {
+          "name": "Compression Reading",
+          "rawScore": "5/5",
+          "earnedPoints": "5",
+          "totalPoints": "5",
+          "date": "11/12/2018",
+          "category": "HW"
+        },
+        "9e0723950bee6a76395cfe6ef6c4f6a34cf9176d481cccf2dab948b89f500d14": {
+          "name": "Prime Number Regex",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "11/16/2018",
+          "category": "HW"
+        },
+        "9008fa34efe8fc097062b6ab9eb64df5fe75ae97b08be19325a8e7c20db6b383": {
+          "name": "RegEx with Door Data (Intro)",
+          "rawScore": "3/3",
+          "earnedPoints": "3",
+          "totalPoints": "3",
+          "date": "11/19/2018",
+          "category": "HW"
+        },
+        "fd0563549bd5e33814a625d8fe4eb2183cd0c22eabbdeb524c7a70e4a7e73489": {
+          "name": "NFA Implementation of Regex",
+          "rawScore": "6/6",
+          "earnedPoints": "6",
+          "totalPoints": "6",
+          "date": "11/19/2018",
+          "category": "HW"
+        },
+        "c16ae2a161f18d4f82f8185624c680f9aec19748563f374d6bcfff95ff891a12": {
+          "name": "20 Percent Code (on Github)",
+          "rawScore": "--/30",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "12/17/2018",
+          "category": "TST"
+        },
+        "a55bfc9f5912a0595353b541ab99dcd5fa73093abacfb794ad24d17320dfb7ae": {
+          "name": "20 Percent Final Writeup",
+          "rawScore": "--/50",
+          "earnedPoints": "null",
+          "totalPoints": "null",
+          "date": "12/17/2018",
+          "category": "TST"
+        }
+      },
+      "Advisory": {},
+      "Self Evaluation: Academic Achievement": {},
+      "Self-Evaluation: Personal Development": {},
+      "Self-Evaluation: Engagement in the Class": {}
+    },
+    "email": "gfitez20@kentdenver.org",
+    "frequency": "ASAP",
+    "password": "gAAAAABcDcFm5KFdoeDyYjSMoqbZLaRtoC49-twKKmja0aILknj2VfYRDKYCbWGsS_2WKLqaLp_03eLq_tGn2Prvenb1WxGdNw==",
+    "salt": "6dcaa916db65423fa55def7505efb62a",
+    "username": "gfitez20"
+  }
 }
