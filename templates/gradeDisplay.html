@@ -22,7 +22,14 @@
           $("#gradeHolder").append("<table class='gradeTable' id='"+encodeCSS(course)+"'></table>")
           $("#"+encodeCSS(course)).append("<th><h3>"+course+"</h3></th>")
           for(assignment in grades[course]){
-            string="<tr><td>"+grades[course][assignment].name+"</td>"+"<td>"+grades[course][assignment].rawScore+"</td></tr>"
+
+            //string="<tr><td>"+grades[course][assignment].name+"</td>"+"<td>"+grades[course][assignment].rawScore+"</td></tr>"
+
+            //Show random grades for presentation
+            if(grades[course][assignment].totalPoints!="null"){
+              string="<tr><td>"+grades[course][assignment].name+"</td>"+"<td>"+Math.floor(Math.random()*grades[course][assignment].totalPoints)+"/"+grades[course][assignment].totalPoints+"</td></tr>"
+            }
+            
 
             $("#"+encodeCSS(course)).append(string)
           }

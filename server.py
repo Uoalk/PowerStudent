@@ -1,3 +1,5 @@
+#This runs the webserver that allows users to sign up and see thir grades
+
 #these are the imports
 from flask import Flask, render_template, request
 import json
@@ -6,13 +8,16 @@ import main
 import uuid
 import encryption
 
-masterPw="1235"
+masterPw="12345"
 app = Flask(__name__)
 
 
+#generates a random string of characters
 def genSalt():
     return str(uuid.uuid4().hex)
 
+
+#adds a user based on submitted data
 def addUser(usr,pw,email,frequency):
     userData=json.loads(open("names.JSON").read())
     salt=genSalt()
@@ -24,9 +29,11 @@ def addUser(usr,pw,email,frequency):
         "salt":salt,
         "password":str(encryptedPW),
         "frequency":frequency,
+        "cachedGrades":{},
     }
     userData[usr]=data
 
+    #save changes to json
     with open('names.json', 'w') as outfile:
         json.dump(userData, outfile, sort_keys = True, indent = 4,
                ensure_ascii = False)
@@ -36,18 +43,25 @@ def addUser(usr,pw,email,frequency):
 #this is the decorator. it shows what to return when i go to the website
 @app.route('/')
 def index():
-    return render_template("bootstrap/index.html")
+    return render_template("index.html")
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
 
 
 @app.route('/signup')
 def signup():
-    return render_template("bootstrap/signup.html")
+    return render_template("signup.html")
 
+
+#path to submit grade data
 @app.route('/submitDetails', methods=["post"])
 def submitDetails():
-    print(request.form)
+
     username = request.form['username']
     password = request.form['password']
+    #make sure that the username and password are valid
     if(not gradeGetter.verifyUsernamePassword(username,password)):
         return "We were unable to verify your username and password. You have not been added to the database."
 
@@ -55,22 +69,15 @@ def submitDetails():
 
 
 
-    return render_template("bootstrap/success.html")
+    return render_template("success.html")
 
+#renders a page to display a users grades
 @app.route('/gradeDisplay', methods=['POST'])
 def authenticate():
-    print(request.form)
-    username = request.form['username']
-    password = request.form['password']
-    email = request.form['email']
-    emailPassword = request.form['emailPassword']
-    print(username+" "+password+ email)
 
+    userData=json.loads(open("names.JSON").read())[request.form["username"]]
 
-    data[username] = {"username":username, "password":password, "email":email, "email_password":emailPassword}
-    with open("names.JSON", 'w') as file:
-        json.dump(data, file, indent=2)
-    return render_template("gradeDisplay.html", grades=main.getStoredGrades())
+    return render_template("gradeDisplay.html", grades=userData["cachedGrades"])
 
 
 
