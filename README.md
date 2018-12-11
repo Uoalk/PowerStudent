@@ -12,15 +12,16 @@ Additionally, you should install selenium:
   -Go to your command prompt and install selenium
 
 Now for the rest of the dependencies, just open command prompt and type:
-  -pip install configparser
 
-  -pip install flask
+`pip install configparser
 
-  -pip install encryption
+pip install flask
 
-  -pip install MIMEText
+pip install encryption
 
-  -pip install BeautifulSoup
+pip install MIMEText
+
+pip install BeautifulSoup`
 
 ![picture](https://github.com/Uoalk/PowerStudent/blob/master/images/ReadMe3.jpg)
 
