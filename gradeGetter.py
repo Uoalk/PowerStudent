@@ -1,4 +1,4 @@
-#This file contains all of the webscraping data to retreive the grades for a user
+#This file contains all of the webscraping functions to retreive the grades for a user
 import selenium
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -118,10 +118,9 @@ def verifyUsernamePassword(usr,pw):
     options.add_argument("--headless")
     driver = webdriver.Firefox(firefox_options=options, executable_path="geckodriver.exe")
     signOn(driver, usr, pw)
-    try: 
+    try:
         driver.find_element_by_css_selector(".feedback-alert")
         #If this errors, it means that they have successfully signed in
     except:
         return True
     return False
-

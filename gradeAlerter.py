@@ -1,4 +1,4 @@
-#This file contains the functions needed to alert a user when theyre grade has been changed.
+#This file contains the functions needed to alert a user when their grade has been changed.
 #In a real situation, this would be run for all users on a loop so they could get constant updates
 
 import main
@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     #get the users grades
     grades=getGradesFromUserData(userData["gfitez20"]);
-    
+
     #see changes from the cached grades
     changes=main.getChanges(userData["gfitez20"]["cachedGrades"],grades)
 
